@@ -1,16 +1,21 @@
 
-function App() {
+import Navbar from "./components/navbar/Navbar";
 
+function App() {
   return (
     <>
-     <div className="bg-indigo-500 snap-y snap-mandatory scroll-smooth h-screen overflow-y-scroll text-8xl">
-      <section className="h-screen snap-start">One</section>
-      <section className="h-screen snap-start">Two</section>
-      <section className="h-screen snap-start">Three</section>
-      <section className="h-screen snap-start">Four</section>
-     </div>
+      <div className="bg-[#475C7A] text-gray-200 snap-y snap-mandatory h-screen overflow-y-scroll">
+        <section id="Homepage" className="h-screen snap-end">
+          <Navbar></Navbar>
+        </section>
+        <section id="Services" className="h-screen snap-end bg-yellow-200">Services</section>
+        <section id="Portfolio" className="h-screen snap-end">Portfolio</section>
+        <section id="Contact" className="h-screen snap-end">Contact</section>
+        <section id="About" className="h-screen snap-end">About</section>
+        
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
