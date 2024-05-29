@@ -3,7 +3,7 @@ const ToggleButton = ({open, setOpen }) => {
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="w-[50px] h-[50px] bg-transparent fixed  top-[27px] left-[35px] rounded-full"
+      className="w-[50px] h-[50px] bg-transparent z-[999] fixed  top-[27px] left-[35px] rounded-full"
     >
 
         {

@@ -30,10 +30,10 @@ const Links = () => {
   return (
     <motion.div
       variants={variants}
-      className="absolute bg-red-200 text-[40px] h-full w-full flex flex-col items-center justify-center gap-5"
+      className="absolute text-[40px] h-full w-full flex flex-col items-center justify-center gap-5"
     >
       {items.map((item) => (
-        <motion.a key={item} href={`#${item}`} variants={itemVariants}>
+        <motion.a key={item} href={`#${item}`} variants={itemVariants} whileHover={{scale: 1.1}} whileTap={{scale:0.96}}>
           {item}
         </motion.a>
       ))}
